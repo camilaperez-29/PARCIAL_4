@@ -1,6 +1,6 @@
 '''
 Este codigo devuelve en pantalla la suma de los 
-primeros n  terminos de una serie,en un numero real x.
+primeros n  terminos de una serie,evaluada un numero real x.
 
 Párametros de entrada: 
   x = numero real 
@@ -11,15 +11,15 @@ Ultima actualizacion: 22 septiembre, 2021
 
 '''
 
-#definimos la funcion serie(x,n)
+# definimos la funcion serie(x,n)
 
 serie <- function(x,n){
   
-  #inicializamos la serie
+  # inicializamos la serie
   
   sumatoria   <-  0       
   
-  #inicializamos el  ciclo
+  # inicializamos el  ciclo
   
   for (i in 1:n) {
     
@@ -33,7 +33,7 @@ serie <- function(x,n){
 
 
 
-#evaluamos la funcion
+# evaluamos la funcion
 
 serie(2,10)
 
