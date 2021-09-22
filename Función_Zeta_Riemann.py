@@ -1,6 +1,6 @@
 '''
 Este codigo devuelve en panatalla 
-la funcion Zeta de Riemann para obtener ((pi)**2)/6.
+la funcion Zeta de Riemann para obtener ((pi)**2 / (6)).
 
 Párametros de entrada: 
     n = número de sumas que se calculan para obtener ((pi)**2 / (6)).
@@ -34,13 +34,13 @@ def zeta(n):
 
 #Evaluamos la funcion para un "n grande"
 
-x = zeta(1000000)
-print(x)
+funcion = zeta(10000)
+print(funcion)
 
 #comparamos el resultado de la funcion respecto al valor real
 
 valor_real = 1.64493
-print("la diferencia de la funcion zeta respecto al valor original es %f"%(abs(x-valor_real)))
+print("la diferencia de la funcion zeta respecto al valor original es %f"%(abs(funcion-valor_real)))
 
 
 '''
