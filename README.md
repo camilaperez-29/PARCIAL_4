@@ -10,19 +10,19 @@ En este repositorio encontraras el desarrollo de  2 ejercicios basados en la teo
 
 >Es necesario que para la realizacion de estos ejercicios tengas pre-instalados en tu ordenador [Rstudio](https://www.r-project.org/ "Rstudio") y [PYTHON](https://www.python.org/ "PYTHON"), ya que, los ejercicios se resolvieron en estas 2 interfaces.
 
-_______________________
+
 ## COMENCEMOS 🚀
-	
+-----
 ### **PROBLEMA1**
 
 (FUNCIÓN ZETA DE RIEMMAN $\zeta$ ) En 1735,el matemático suizo Leonhard Euler resolvió un famoso problema en teoría de números, al mostrar que la suma
 $$\sum_{k=1}^n\frac{1}{k^2}=1+\frac{1}{2^2}+\frac{1}{3^2}+...+\frac{1}{n^2}\tag{23}$$
 
-se aproxima a $\frac{\pi^2}{6}$,cuando el número de sumandos n se hace "grande". Implemente una funcion llamada `zeta(n)` que evalue la suma *(23)* . A medida que n se hace "grande", ¿`zeta(n)` se aproxima a $\frac{\pi^2}{6}$?
+se aproxima a $\frac{\pi^2}{6}$,cuando el número de sumandos n se hace "grande". Implemente una funcion llamada `zeta(n)` que evalue la suma. A medida que n se hace "grande", ¿`zeta(n)` se aproxima a $\frac{\pi^2}{6}$?
 
 ### *solucion*:
-________
-- Primero: definimos la función `zeta(n)` en el lenguaje de Python.
+
+- Primero: definamos la función `zeta(n)` en el lenguaje de Python.
 
 
     ``` python
@@ -44,7 +44,7 @@ ________
 
     ```
 
-- Segundo: evaluamos la función para diferentes n "grandes", *ejemplo:*
+- Segundo: evaluemos la función para diferentes n "grandes", *ejemplo:*
     ```python
     funcion = zeta(10000)
     print(funcion)
@@ -52,7 +52,7 @@ ________
     ```python
     1.6448340718480652
     ```
-- Tercero: Comparamos el resultado de la función `zeta(n)` con el valor de $\frac{\pi^2}{6}$, para ver que tan aproximado esta del valor real.
+- Tercero: Comparemos el resultado de la función `zeta(n)` con el valor de $\frac{\pi^2}{6}$, para ver que tan aproximado esta del valor real.
 
     ```python
     valor_real = 1.64493
