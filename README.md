@@ -5,7 +5,7 @@ CREACIÓN DE FUNCIONES A PARTIR DE SERIES
 
 En este repositorio encontraras el desarrollo de  2 ejercicios basados en la teoría de  series y funciones matemáticas, con el fin de poner en práctica los conocimientos básicos de programacion aprendidos durante el curso de computación 2021 de la Udea.
 
-------
+
 ## Pre-requisitos 📝
 
 >Es necesario que para la realizacion de estos ejercicios tengas pre-instalados en tu ordenador [Rstudio](https://www.r-project.org/ "Rstudio") y [PYTHON](https://www.python.org/ "PYTHON"), ya que, los ejercicios se resolvieron en estas 2 interfaces.
@@ -63,18 +63,60 @@ se aproxima a $\frac{\pi^2}{6}$,cuando el número de sumandos n se hace "grande"
     ```
     
 ### **RESPUESTA:**
-Por lo anterior podemos notar que A medida que n se hace "grande", la diferencia respecto al valor real se hace mas 
+Por lo anterior podemos notar que a medida que n se hace "grande", la diferencia respecto al valor real se hace mas 
 pequeña, con lo cual se puede concluir que a medida que n "crece" la funcion `zeta(n)` se aproxima a $\frac{\pi^2}{6}$.
 
+---
+
+### **PROBLEMA2**
+
+Para cada una de las expresiones ("series") dadas a continuación, elabore una función `f(x,n)` que evalue la suma de los primeros n términos en un número real x.
+
+$f)$  $$x+\frac{x^2}{2^{\sqrt{2}}}+\frac{x^3}{3^{\sqrt[3]{3}}}+\frac{x^4}{4^{\sqrt[4]{4}}}+\frac{x^5}{5^{\sqrt[5]{5}}}+......$$
+
+### *solucion*:
+
+
+- Primero: Expresamos la serie en términos de sumatoria
+$$ \sum_{i=1}^{n}\frac{x^i}{i^{\sqrt[i]{i}}}=x+\frac{x^2}{2^{\sqrt{2}}}+\frac{x^3}{3^{\sqrt[3]{3}}}+\frac{x^4}{4^{\sqrt[4]{4}}}+\frac{x^5}{5^{\sqrt[5]{5}}}+......$$
 
 
 
 
 
-
-      
-
+- Segundo: definamos la función `serie(x,n)` en el lenguaje de Rstudio.
 
 
+    ```r
+    serie <- function(x,n){
+  
+     # inicializamos la serie
+  
+    sumatoria   <-  0       
+  
+    # inicializamos el  ciclo
+  
+    for (i in 1:n) {
+    
+        termino   <- ((x)^i) / ((i) ^ ((i) ^ (1/i)))
+        sumatoria <- sumatoria + termino
 
+    }
+  
+    return(sumatoria)
 
+    }
+
+    ```
+
+- Tercero : evaluamos la función para cualquier `x` y  `n`. Ejemplo para `x=2` y `n=10`
+
+    ```r
+    serie(2,10)
+
+    ```
+    ```r
+    > serie(2,10)
+    [1] 131.046
+    ```
+    
