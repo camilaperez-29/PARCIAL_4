@@ -1,4 +1,4 @@
-# PARCIAL_4	❕
+# PARCIAL_4	
 CREACIÓN DE FUNCIONES A PARTIR DE SERIES
 
 
@@ -62,7 +62,7 @@ se aproxima a $\frac{\pi^2}{6}$,cuando el número de sumandos n se hace "grande"
     la diferencia de la funcion zeta respecto al valor original es 0.000096
     ```
     
-### **RESPUESTA:**
+### **RESPUESTA:** 📌
 Por lo anterior podemos notar que a medida que n se hace "grande", la diferencia respecto al valor real se hace mas 
 pequeña, con lo cual se puede concluir que a medida que n "crece" la funcion `zeta(n)` se aproxima a $\frac{\pi^2}{6}$.
 
@@ -108,7 +108,7 @@ $$ x+\frac{x^2}{2^{\sqrt{2}}}+\frac{x^3}{3^{\sqrt[3]{3}}}+\frac{x^4}{4^{\sqrt[4]
     }
 
     ```
-### **RESPUESTA:**
+### **RESPUESTA:** 📌
 
  evaluamos la función para cualquier `x` y  `n`. Ejemplo para `x=2` y `n=10`
 
