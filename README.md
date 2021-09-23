@@ -78,7 +78,7 @@ $f)$  $$x+\frac{x^2}{2^{\sqrt{2}}}+\frac{x^3}{3^{\sqrt[3]{3}}}+\frac{x^4}{4^{\sq
 
 
 - Primero: Expresamos la serie en términos de sumatoria
-$$ \sum_{i=1}^{n}\frac{x^i}{i^{\sqrt[i]{i}}}=x+\frac{x^2}{2^{\sqrt{2}}}+\frac{x^3}{3^{\sqrt[3]{3}}}+\frac{x^4}{4^{\sqrt[4]{4}}}+\frac{x^5}{5^{\sqrt[5]{5}}}+......$$
+$$ x+\frac{x^2}{2^{\sqrt{2}}}+\frac{x^3}{3^{\sqrt[3]{3}}}+\frac{x^4}{4^{\sqrt[4]{4}}}+\frac{x^5}{5^{\sqrt[5]{5}}}+......=\sum_{i=1}^{n}\frac{x^i}{i^{\sqrt[i]{i}}}$$
 
 
 
@@ -108,15 +108,11 @@ $$ \sum_{i=1}^{n}\frac{x^i}{i^{\sqrt[i]{i}}}=x+\frac{x^2}{2^{\sqrt{2}}}+\frac{x^
     }
 
     ```
+### **RESPUESTA:**
 
-- Tercero : evaluamos la función para cualquier `x` y  `n`. Ejemplo para `x=2` y `n=10`
+ evaluamos la función para cualquier `x` y  `n`. Ejemplo para `x=2` y `n=10`
 
-    ```r
-    serie(2,10)
-
-    ```
-    ```r
+```r
     > serie(2,10)
     [1] 131.046
-    ```
-    
+```
